@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Blockchain Staking Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a decentralized application (dApp) that enables users to stake and unstake tokens on an Ethereum-compatible blockchain. Built with React and ethers.js, it provides a user-friendly interface for interacting with a staking smart contract.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Wallet Connection: Seamless integration with Web3 wallets like MetaMask
+- Staking: Ability to stake tokens into the smart contract
+- Unstaking: Functionality to withdraw staked tokens
+- Real-time Balance: Display of user's current staked balance
+- Transaction Handling: Efficient management of blockchain transactions
+- Responsive Design: Mobile-friendly interface using Tailwind CSS
+- Alert System: User notifications for actions and errors
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React.js
+- ethers.js
+- Tailwind CSS
+- Web3.js (for wallet connection)
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
+- A Web3 wallet (e.g., MetaMask) installed in your browser
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/blockchain-staking-app.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
+   ```
+   cd blockchain-staking-app
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-### `npm run eject`
+4. Create a `.env` file in the root directory and add your environment variables:
+   ```
+   REACT_APP_CONTRACT_ADDRESS=your_contract_address_here
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Start the development server:
+   ```
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application should now be running on `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Connect your Web3 wallet using the "Connect Wallet" button.
+2. Enter the amount you wish to stake in the input field.
+3. Click "Stake" to stake your tokens or "Unstake" to withdraw them.
+4. Confirm the transaction in your Web3 wallet.
+5. View your updated staked balance on the interface.
 
-## Learn More
+## Smart Contract
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application interacts with a custom staking smart contract. The ABI for this contract is located in `src/utils/ABI/Transactions.json`. Ensure that you're connecting to the correct network where the contract is deployed.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgments
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Thanks to the Ethereum community for providing robust tools and documentation.
+- Tailwind CSS for the utility-first CSS framework.
