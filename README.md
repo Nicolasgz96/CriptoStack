@@ -31,12 +31,12 @@ This project is a decentralized application (dApp) that enables users to stake a
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/blockchain-staking-app.git
+   git clone https://github.com/yourusername/CriptoStack.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd blockchain-staking-app
+   cd CriptoStack
    ```
 
 3. Install dependencies:
